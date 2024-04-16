@@ -1,0 +1,108 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/parent_login_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login">
+
+    <TextView
+        android:id="@+id/login_heading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:text="Login"
+        android:textColor="@color/white"
+        android:textSize="32sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login_heading"
+        android:layout_marginHorizontal="32dp"
+        android:layout_marginTop="51dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/email_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/password_edit_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:textColor="@android:color/black"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimaryDark"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/forgot_password_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:text="Forgot Password?"
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/or_text"
+        android:layout_width="42dp"
+        android:layout_height="43dp"
+        android:layout_below="@id/input_layout"
+        android:layout_marginTop="3dp"
+        android:layout_marginHorizontal="180dp"
+        android:text="Or"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/google_sign_in_button"
+        android:layout_width="140dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/or_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="82dp" />
+
+    <TextView
+        android:id="@+id/sign_up_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/google_sign_in_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-140dp"
+        android:text="Don't have an account? Sign Up"
+        android:textColor="@color/cardview_dark_background"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/sign_up_button"
+        android:layout_width="358dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sign_up_text"
+        android:layout_marginTop="13dp"
+        android:text="Sign Up"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="16sp" />
+</RelativeLayout>

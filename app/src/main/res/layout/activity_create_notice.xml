@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/sign"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:gravity="center_horizontal"
+        android:text="@string/create_not_title"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="80dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="@string/title"
+        android:textAllCaps="true"
+        android:textColorHighlight="@color/title_text"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="@string/title"
+        android:inputType="textPersonName"
+        android:textColorHighlight="@color/title_text"
+        android:textColorHint="@color/title_text" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@color/colorPrimary"
+        android:textColorHighlight="@color/title_text"
+        android:gravity="center"
+        android:text="@string/description"
+        android:textAllCaps="true"
+        android:textColor="@color/title_text"
+        android:textSize="18sp" />
+
+    <!-- Submit Button -->
+    <EditText
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="85dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:ems="10"
+        android:hint="@string/description"
+        android:inputType="textMultiLine"
+        android:textColorHighlight="@color/title_text"
+        android:minLines="5"
+        android:textColorHint="@color/title_text" />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="109dp"
+        android:layout_height="58dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="@string/SUBMIT" />
+
+</LinearLayout>

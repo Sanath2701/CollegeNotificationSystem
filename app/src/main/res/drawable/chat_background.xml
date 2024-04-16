@@ -1,0 +1,19 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:shape="rectangle"
+    tools:ignore="ExtraText">
+
+    <!-- Background color for the chat bubble -->
+    <solid android:color="#80FFFFFF" /> <!-- You can change this color as desired -->
+
+    <!-- Rounded corners for the chat bubble -->
+    <corners
+        android:radius="8dp" /> <!-- Adjust the radius to change the roundness of the corners -->
+
+    <!-- Border for the chat bubble -->
+    <stroke
+        android:color="@color/white"
+        android:width="1dp" /><!-- Border width -->
+
+
+</shape>
